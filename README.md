@@ -2,7 +2,7 @@
 
 <img src="icons/icon128.png" width="96" height="96" alt="Fastest Domain Name Search & Domain Data Chrome Extension icon">
 
-# Fastest Domain Name Search & Domain Data Chrome Extension
+# Fastest Domain Name Search & Domain Data Chrome Extension by Domainnameregistration.com
 
 ### Search, investigate, and understand any domain—without leaving your browser.
 
