@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Fastest&nbsp;Domain&nbsp;Name&nbsp;Search&nbsp;&amp;&nbsp;Domain&nbsp;Data&nbsp;Chrome&nbsp;Extension</span>
+      </div>
+    </header>
+
+    <!-- Top tabs (tools) -->
+    <nav class="tabs glass" id="tabs" aria-label="Tools">
+      <button class="tab active" data-tab="search">Domain Search</button>
+      <button class="tab" data-tab="age">Domain Age</button>
+      <button class="tab" data-tab="expiration">Domain Expiration</button>
+      <button class="tab" data-tab="dns">DNS Lookup</button>
+      <button class="tab" data-tab="whois">WHOIS Checker</button>
+      <button class="tab" data-tab="redirect">Redirect Checker</button>
+    </nav>
+
+    <main class="content">
+      <!-- ===== Domain Search ===== -->
+      <section class="panel" id="panel-search">
+        <div class="searchbox glass">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          <input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="Search for a domain name…" />
+          <span class="kbd">/</span>
+        </div>
+
+        <div class="summary" id="summary"></div>
+        <div class="results" id="results">
+          <div class="empty">Type a name and press <span class="kbd sm">Enter</span> to check availability across extensions.</div>
+        </div>
+      </section>
+
+      <!-- ===== Generic tool panels (built by JS) ===== -->
+      <section class="panel hidden" id="panel-age"></section>
+      <section class="panel hidden" id="panel-expiration"></section>
+      <section class="panel hidden" id="panel-dns"></section>
+      <section class="panel hidden" id="panel-whois"></section>
+      <section class="panel hidden" id="panel-redirect"></section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer-note">Provided by the Fastest Domain Search on the internet:
+        <a class="footer-link" href="https://domainnameregistration.com" target="_blank" rel="noopener">Domainnameregistration.com</a>
+      </span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
